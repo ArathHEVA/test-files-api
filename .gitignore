@@ -1,0 +1,45 @@
+# ───────── Node.js ─────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.pid.lock
+
+# ───────── Builds / coverage ─────────
+dist/
+build/
+coverage/
+.nyc_output/
+tmp/
+temp/
+
+# ───────── Env (no subir secretos) ─────────
+.env
+.env.*
+!.env.example        # sí sube el ejemplo
+
+# ───────── Docker (mantén Dockerfile/compose base) ─────────
+docker-compose.override.yml
+.docker/
+docker/*.local.yml
+*.docker.local.yml
+
+# Volúmenes/directorios locales opcionales (si los usas)
+docker-data/
+data/
+storage/
+
+# ───────── Logs ─────────
+logs/
+*.log
+*.log.*
+
+# ───────── OS / editor ─────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
